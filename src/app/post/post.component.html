@@ -1,9 +1,0 @@
-<li [ngClass]="{'list-group-item':true, 'list-group-item-success': loveIts > 0, 'list-group-item-danger': loveIts < 0}">
-  <h4 [ngStyle]="{color: getColor()}">{{ postTitle }}</h4>
-  <p [ngStyle]="{color: getColor()}">{{ postContent }}</p>
-  <div>
-    <button type="button" class="btn btn-success" (click)="iLoveit()">I LoveIt!</button>
-    <button type="button" class="btn btn-danger" (click)="iHateit()">I HateIt!</button>
-    <h5 style="color:grey" class="text-right">{{ date | date:'short' }}</h5>
-  </div>
-</li>
